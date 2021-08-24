@@ -25,7 +25,7 @@
                 <li><strong>cd </strong> abre el directorio especificado</li>
                 <li><strong>git init </strong> inicia un repositorio de git </li>
                 <li><strong>rm rf .git</strong> elimina el repositorio de manera forzada</li>
-                
+
 
 
             </ul>
@@ -36,11 +36,24 @@
                 el area de control de cambios, corresponde a un archivo que se encuentra en la carpeta .git, y se utiliza para registrar o realizar las cap de pantallas del codigo, tambien conocidas como snapshot de los diferentes archivos del proyecto. Aqui se realiza el seguimiento de los mismos, para realizar la confirmacion y poder acceder a los diferentes cambios dentro de la historia de nuestro proyecto. Es importante tener en ciuenta que todo archivo que no sea agregado al index no se podra recuperar en caso de ser eliminado.
             </p>
             <ul class="commands">
-                <li>
-                    <strong>git status</strong> muestra el estado de los archivos con respecto a la ultima confirmacion, en casa que exista.
-                </ul>
-                    <li><strong>untracked:</strong> al archivo no se le esta haciendo seguimiento </li>
-                    <li><strong>staged:</strong> los cambios no fueron agregados pero aun no estan confirmados</li>
+                <li><strong> git status </strong> muestra el estado de los archivos con respecto a la ultima confirmacion, en caso que exista.
+                    <ul>
+                        <li><strong> untracked: </strong> al archivo no se le esta realizando seguimiento</li>
+                        <li><strong>staged: </strong> los cambios fueron agregados pero aun no estan confirmados</li>
+                        <li><strong> modified:</strong> el archivo difiere con respecto a lo almacenado en la ultima confirmacion </li>
+                        <li><strong> commited:</strong> los cambios fueron almacenados en una confirmacion </li>
+                    </ul>
+                
+                </li>
+
+                <li><strong>git add &lt;file </strong> agrega al INDEX el/los archivos seleccionados</li>
+                <li><strong> git rm --cached &lt;file></strong> quita del INDEX el archivo seleccionado sin modificar el original, cuando todavia no fue confirmado</li>
+                <li><strong>git restored --staged &lt;file></strong> remueve los cambios de los archivos agregados al index </li>
+
+
+
+                    
+            </ul>
                     
         </article>
     </section>
